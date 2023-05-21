@@ -1,0 +1,47 @@
+import javax.xml.transform.stream.StreamSource;
+import java.util.*;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class papers {
+
+    void fun(Integer num)
+    {
+
+List<Double> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        list1.add(26.0);
+
+        list1.add(20.5);
+        list1.add(34.0);
+        list1.add(10.5);
+        list1.add(18.0);
+        list2.add("TOI");
+        list2.add("HINDU");
+        list2.add("ET ");
+        list2.add("BM");
+        list2.add("HT");
+
+    for(int i =0; i<list1.size();i++)
+    {
+for(int j=i+1;j<list1.size();j++)
+{
+    if(list1.get(i)+list1.get(j)<= num)
+    {
+        System.out.print("["+" "+list2.get(i)+","+list2.get(j)+"]");
+    }
+}
+
+    }
+
+    }
+
+    public static void main(String args[])
+    {
+        papers p = new papers();
+        p.fun(30);
+    }
+
+
+
+}
